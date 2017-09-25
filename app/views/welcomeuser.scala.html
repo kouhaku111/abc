@@ -1,0 +1,17 @@
+@(username: String)
+
+@main() {
+    <h1>Welcome @username</h1>
+    Got your name from the session.
+    
+    <div>
+        <!-- <button id="checkBalance" type="submit">Check Balance</button> -->
+        <a href="@routes.Application.checkBalance()">Check Balance</a>
+    </div>
+    <div>
+        <a href="@routes.Application.logout()">Logout</a>
+    </div>
+
+    <script type="text/javascript" src="@routes.Assets.versioned("javascripts/user.js")"></script>
+}
+

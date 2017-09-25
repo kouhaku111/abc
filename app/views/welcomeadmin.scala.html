@@ -1,0 +1,44 @@
+@()
+
+@main() {
+    <h1>Welcome admin</h1>
+    Got your name from the session.
+    
+    <div>
+        <button id="logout" type="submit">Logout</button>
+    </div>
+    
+    <div>
+        <label><b>Username</b></label>
+        <input type="text" id="username1" required>
+        
+        <label><b>Email</b></label>
+        <input type="email" id="email" required>
+        
+        <label><b>Password</b></label>
+        <input type="password" id="password" required>
+        
+        <button id="add" type="submit">Add</button>
+    </div>
+            
+    <div>
+        <label><b>Username</b></label>
+        <input type="text" id="username2" required>
+                
+        <button id="delete" type="submit">Delete</button>
+    </div>
+            
+    <div>
+        <label><b>Username</b></label>
+        <input type="text" id="username3" required>
+                
+        <button id="block" type="submit">Block</button>
+    </div>
+    
+    <script type="text/javascript" src="@routes.Assets.versioned("javascripts/admin.js")"></script>
+}
+
+
+
+
+
